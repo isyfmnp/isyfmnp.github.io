@@ -21,7 +21,7 @@
       >
         <img
           class="profile-img"
-          :src="'/images/profiles/speakers/2025/' + profile.image + '_square.jpg'"
+          :src="'/images/profiles/speakers/' + profile.image + '_square.jpg'"
           alt=""
         />
         <div class="name">
@@ -44,7 +44,7 @@
       <section class="profile" v-for="profile in event.profiles">
         <div class="scroll-anchor" :id="profile.name.replaceAll(' ', '')"></div>
         <img
-          :src="'/images/profiles/speakers/2025/' + profile.image + '.jpg'"
+          :src="'/images/profiles/speakers/' + profile.image + '.jpg'"
           :alt="profile.name"
         />
         <div class="info">
