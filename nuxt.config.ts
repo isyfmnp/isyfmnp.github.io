@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+
   ssr: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -44,4 +45,6 @@ export default defineNuxtConfig({
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  compatibilityDate: "2024-10-21",
 });

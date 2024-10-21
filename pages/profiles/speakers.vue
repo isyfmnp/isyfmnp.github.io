@@ -135,7 +135,7 @@ const profiles = [
         name: "Professor Chan Chun Yong, Eric",
         image: "chan-chun-yong-eric",
         description:
-          "“Lorem Ipsum.",
+          "Professor Eric Chan is a pharmaceutical scientist and pharmacist in the Department of Pharmacy and Pharmaceutical Sciences, National University of Singapore (NUS). His research interests are (1) physiologically-based pharmacokinetic-pharmacodynamic (PBPK-PD) modeling of pharmacology and toxicology, (2) xenobiotic-derived reactive metabolite research with specific focus on interaction with biological proteins and (3) metabolism-driven systems biology modeling of pathology, pharmacology, toxicology and mammalian host-bacteria interactions. <br><br>Professor Chan is currently Deputy Head (Research) and a member of the Faculty Promotion and Tenure Committee (FPTC). He is the Executive Editor of the British Journal of Clinical Pharmacology. He is also an editorial advisory board member of the Biochemical Pharmacology, Drug Metabolism and Disposition and Journal of Chromatography B. He is an expert consultant at the Hyloris Pharmaceuticals and the Agency for Science, Technology and Research (A*STAR) Experimental Drug Development Centre (EDDC), and a member of the Singapore Food Agency (SFA) Novel Food Safety Expert Working Group. <br><br>Professor Chan was awarded the Dean’s Chair Professorship in the Faculty of Science (2015-2018). He was six times a recipient of the Faculty of Science Teaching Excellence Award and four times the NUS Annual Teaching Excellence Award. He also received the Faculty of Science Young Scientist Award (2010) and Outstanding Scientist Award (2014).",
       },
       {
         name: "A/Professor Hou Han Wei",
@@ -159,7 +159,7 @@ const profiles = [
         name: "A/Professor Wu Wei",
         image: "wu-wei",
         description:
-          "Lorem Ipsum.",
+          "Prof Wu Wei received his PhD degree at Swiss Federal Institute of Technology in Lausanne (EPFL), Switzerland. Prior to joining NTU, he was a Postdoctoral Scholar at Stanford University, USA. He is currently an Associate Professor at Nanyang Technological University (NTU), Singapore, and serves as the President of Society for Rock Mechanics & Engineering Geology (SRMEG), the Associate Editor for International Journal of Rock Mechanics and Mining Sciences, and the Assistant Chair for Research in School of Civil and Environmental Engineering (CEE) at NTU. Prof Wu’s research focuses on experimental geophysics and energy geomechanics, with emphasis on underground space development, geo-energy extraction and storage, as well as induced geohazards due to climate change and energy extraction. He currently leads several research projects on geothermal energy exploration, underground energy storage, and urban geophysical survey in Singapore. He has received numerous awards, such as NTU CEE Research Award in 2023, SRMEG Outstanding Paper Award in 2017, and Swiss Perspective Researcher Fellowship in 2013.",
       }
     ],
   },
