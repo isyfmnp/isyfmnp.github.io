@@ -4,10 +4,10 @@
       <div class="info">
         <img class="logo" src="/icon_light.png" alt="ISYF Logo" />
         <div class="title-wrapper">
-          <h1 class="title">International Science Youth Forum 2024</h1>
+          <h1 class="title">International Science Youth Forum 2025</h1>
           <div class="title2-wrapper">
             <h1 class="title title2" aria-hidden>
-              International Science Youth Forum 2024
+              International Science Youth Forum 2025
             </h1>
           </div>
         </div>
@@ -16,7 +16,7 @@
           <div class="detail">
             <span class="material-icons-outlined small-icon">
               calendar_month </span
-            >8-12 January 2024
+            >6-10 January 2025
           </div>
           <div class="seperator"></div>
           <div class="detail">

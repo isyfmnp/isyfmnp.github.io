@@ -4,7 +4,7 @@
       <img class="logo light" src="/icon_light.png" alt="ISYF Logo" />
       <img class="logo dark" src="/icon_dark.png" alt="ISYF Logo" />
       <div class="text">
-        <div class="title">ISYF 2024</div>
+        <div class="title">ISYF 2025</div>
       </div>
     </a>
 
@@ -87,7 +87,7 @@
       <div class="socials">
         <a
           class="item"
-          href="https://www.instagram.com/isyf.2024/"
+          href="https://www.instagram.com/isyf.2025/"
           target="_blank"
         >
           <InstagramIcon />

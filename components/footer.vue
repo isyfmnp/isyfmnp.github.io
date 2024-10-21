@@ -6,7 +6,7 @@
 
         <div class="credits">
           <span class="copyright">
-            © International Science Youth Forum 2024. All rights reserved.
+            © International Science Youth Forum 2025. All rights reserved.
           </span>
 
           <p>Made with ♡ by Tang Xuyuan and Nguyen Thien Minh Tuan</p>
@@ -34,10 +34,10 @@
           <div class="contact-list">
             <a
               class="item"
-              href="https://www.instagram.com/isyf.2024/"
+              href="https://www.instagram.com/isyf.2025/"
               target="_blank"
             >
-              <InstagramIcon /><span class="full-social">@isyf.2024</span>
+              <InstagramIcon /><span class="full-social">@isyf.2025</span>
             </a>
             <a
               class="item"
