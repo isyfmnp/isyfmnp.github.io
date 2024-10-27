@@ -421,7 +421,7 @@ const events = [
     // Day 4
     {
       name: "Preparation for Masterclasses",
-      time: "8:30AM",
+      time: "8:30 AM",
     },
     {
       name: "Masterclasses II",
