@@ -466,7 +466,7 @@ const events = [
     },
     {
         name: "Depart for Hotel",
-        time: "11AM",
+        time: "11 AM",
     },
     {
       name: "Closing Lunch & Farewell",
