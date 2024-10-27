@@ -274,12 +274,12 @@ onMounted(() => {
 });
 
 const days = [
-  "Day 0 (7 Jan)",
-  "Day 1 (8 Jan)",
-  "Day 2 (9 Jan)",
-  "Day 3 (10 Jan)",
-  "Day 4 (11 Jan)",
-  "Day 5 (12 Jan)",
+  "Day 0 (5 Jan)",
+  "Day 1 (6 Jan)",
+  "Day 2 (7 Jan)",
+  "Day 3 (8 Jan)",
+  "Day 4 (9 Jan)",
+  "Day 5 (10 Jan)",
 ];
 
 const events = [
@@ -289,11 +289,20 @@ const events = [
       name: "Arrival of Delegates",
       description: "Welcome to Singapore!",
     },
+    {
+        name: "Dinner",
+        time: "6 PM",
+    },
+    {
+        name: "Briefing and Cultural Hour I",
+        time: "7 PM - 7:30PM",
+        description: "The Cultural Hour and Exhibition provides the opportunity for delegates from all over the world to showcase their unique history, culture and tradition! Through this, delegates will be able to traverse the global village, better understand each other’s cultures, and view the world from a global perspective.",
+    },
   ],
   [
     // Day 1
-    {
-      name: "School Assembly",
+    {git
+      name: "Introduction of Delegates,
       time: "7:30 AM",
     },
     {
@@ -301,61 +310,63 @@ const events = [
       time: "8 AM",
     },
     {
-      name: "Team Bonding Activities",
-      time: "9 AM",
+      name: "Depart for NUS",
+      time: "9:30 AM",
     },
     {
-      name: "Singapore Discovery Trail",
-      time: "10 AM - 5 PM",
+      name: "Professor Sow’s Lecture: Introduction to the Nanoworld @ National University Singapore",
+      time: "10 AM",
       highlight: true,
       description:
-        "From the phenomenal urban landscape to the lush nature in Singapore’s parks, adventure awaits! On the Singapore Discovery Trail, delegates will be able to explore key attractions in Singapore while completing challenges and tasks throughout their journey. The trail will also allow delegates to gain a deeper understanding of Singapore’s traditions and cultures while immersing in the wonders of this garden city.",
+        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture.",
     },
     {
-      name: "Dinner",
-      time: "6 PM - 7 PM",
+      name: "Lunch at NUS",
+      time: "12 PM",
     },
     {
-      name: "Science Activity",
-      time: "7 PM - 8:30 PM",
+      name: "NUS ECE Lab Tour",
+      time: "2 PM - 4 PM",
       highlight: true,
       description: "",
+    },
+    {
+        name: "Return to HCIBS",
+        time: "5 PM",
+    },
+    {
+        name: "Dinner",
+        time: "5:30 PM",
+    },
+    {
+        name: "Science Activities",
+        time: "6:30 PM - 8:30 PM",
     },
   ],
   [
     // Day 2
     {
-      name: "Cultural Hour I",
-      time: "8 AM - 9 AM",
+      name: "Singapore Discovery Trail",
+      time: "7:30 AM",
       highlight: true,
       description:
-        "The Cultural Hour and Exhibition provides the opportunity for delegates from all over the world to showcase their unique history, culture and tradition! Through this, delegates will be able to traverse the global village, better understand each other’s cultures, and view the world from a global perspective. ",
+        "From the phenomenal urban landscape to the lush nature in Singapore’s parks, adventure awaits! On the Singapore Discovery Trail, delegates will be able to explore key attractions in Singapore while completing challenges and tasks throughout their journey. The trail will also allow delegates to gain a deeper understanding of Singapore’s traditions and cultures while immersing in the wonders of this garden city. ",
     },
     {
-      name: "Professor Sow’s Lecture: Introduction to the Nanoworld @ National University Singapore",
-      time: "10 AM - 12 PM",
-      highlight: true,
-      description:
-        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture. ",
+      name: "Return to HCI",
+      time: "2:30 PM",
     },
     {
-      name: "Lunch at NUS",
-      time: "12:15 PM - 1:15 PM",
-    },
-    {
-      name: "Science Quest @ Science Centre Singapore",
-      time: "2 PM - 5 PM",
-      highlight: true,
-      description:
-        "Through Science Quest, delegates will head out on an excursion to Science Centre Singapore, which features over 850 exhibits across eight galleries, including an OMNIMAX theater and unique Observatory. Look forward to interactive displays on various scientific topics and an engaging experience! ",
+      name: "Science Activites",
+      time: "3 PM - 5:30 PM",
     },
     {
       name: "Dinner",
       time: "6 PM - 7 PM",
     },
     {
-      name: "Cultural Hour II",
-      time: "7 PM - 8 PM",
+      name: "Cultural Hour II @ LT2",
+      time: "7 PM - 9 PM",
       highlight: true
     },
   ],
@@ -370,44 +381,47 @@ const events = [
       time: "9:30 AM - 11 AM",
       highlight: true,
       description:
-        "Ever wanted to interact with eminent scientists from around the world? Through our various Masterclasses,  Nobel Laureates and eminent scientistswill share about their cutting-edge research, and their passion for science. After which, delegates will have the opportunity to pose questions to the scientists and learn more about the scientific world",
+        "Ever wanted to interact with eminent scientists from around the world? Through our various Masterclasses,  Nobel Laureates and eminent scientists will share about their cutting-edge research, and their passion for science. After which, delegates will have the opportunity to pose questions to the scientists and learn more about the scientific world",
     },
     {
       name: "Cultural Exhibition",
       time: "11 AM - 12:30 PM",
       highlight: true,
-      description: ""
+      description: "",
     },
     {
       name: "Lunch",
-      time: "12:30 PM - 1:30 PM",
+      time: "12:30 PM",
     },
     {
-      name: "Unlocking the Wonders Excursion @ Bird Paradise",
-      time: "2 PM - 5:30 PM",
+        name: "Depart for Science Centre"
+        time: "1:30 PM",
+    },
+    {
+      name: "Science Quest",
+      time: "2 PM - 5 PM",
       highlight: true,
-      description:
-        "Is it a bird? Is it a plane? Nope, its the inaugural Unlocking the Wonders: Excursion! Head over to the newly opened Bird Paradise Singapore and,immerse yourself in the symphony of colours at Asia’s largest bird park, gaining a better understanding of our feathered friends whilst learning about the technologies that keep them healthy.",
+      description: "",
+    },
+    {
+        name: "Return to HCIBS",
+        time: "5 PM",
     },
     {
       name: "Dinner",
-      time: "6 PM - 6 PM",
+      time: "6 PM",
     },
     {
-      name: "Cultural Hour III",
-      time: "7 PM - 8 PM",
+      name: "Cultural Hour III @ LT2",
+      time: "7 PM - 9 PM",
       highlight: true,
-    },
-    {
-      name: "Science Quest Reflections",
-      time: "8 PM - 9 PM",
     },
   ],
   [
     // Day 4
     {
       name: "Preparation for Masterclasses",
-      time: "8:30AM - 9:30 AM",
+      time: "8:30AM",
     },
     {
       name: "Masterclasses II",
@@ -418,11 +432,15 @@ const events = [
     },
     {
       name: "Lunch",
-      time: "11:15 AM - 12:15 PM",
+      time: "12 AM - 1 PM",
+    },
+    { 
+        name: "Seated for Keynote Lecture",
+        time: "1:15 PM",
     },
     {
       name: "ISYF Keynote Lecture",
-      time: "1 PM - 2:30 PM",
+      time: "1:30 PM - 3 PM",
       highlight: true,
       description:
         "Hear from the insights of Nobel Laureates during the Keynote Lecture, which will also be the flagship event of ISYF 2024. After which, take a tour around the Poster Exhibition, where student delegates will share their scientific research with eminent scientists, educators, and other fellow delegates! ",
@@ -433,18 +451,22 @@ const events = [
       highlight: true,
     },
     {
-      name: "Night Out",
-      time: "5 PM - 9 PM",
+      name: "Team Bonding Activities",
+      time: "4:30 PM - 9 PM",
     },
   ],
   [
     // Day 5
     {
       name: "Science Activity Solutions",
-      time: "9 AM - 10:30 AM",
+      time: "8 AM - 10 AM",
       highlight: true,
       description:
         "The collaborative science activity promises to tickle delegates’ thinking caps as they explore the art of geometry and principles of physics. This will culminate into a group presentation, where delegates will share their ideas with their peers. The thrill of discovery awaits! ",
+    },
+    {
+        name: "Depart for Hotel",
+        time: "11AM",
     },
     {
       name: "Closing Lunch & Farewell",
