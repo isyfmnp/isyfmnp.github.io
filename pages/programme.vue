@@ -301,8 +301,8 @@ const events = [
   ],
   [
     // Day 1
-    {git
-      name: "Introduction of Delegates,
+    {
+      name: "Introduction of Delegates",
       time: "7:30 AM",
     },
     {
@@ -394,7 +394,7 @@ const events = [
       time: "12:30 PM",
     },
     {
-        name: "Depart for Science Centre"
+        name: "Depart for Science Centre",
         time: "1:30 PM",
     },
     {
