@@ -443,7 +443,7 @@ const events = [
       time: "1:30 PM - 3 PM",
       highlight: true,
       description:
-        "Hear from the insights of Nobel Laureates during the Keynote Lecture, which will also be the flagship event of ISYF 2024. After which, take a tour around the Poster Exhibition, where student delegates will share their scientific research with eminent scientists, educators, and other fellow delegates! ",
+        "Hear from the insights of Nobel Laureates during the Keynote Lecture, which will also be the flagship event of ISYF 2025. After which, take a tour around the Poster Exhibition, where student delegates will share their scientific research with eminent scientists, educators, and other fellow delegates! ",
     },
     {
       name: "Poster Exhibition",
@@ -473,12 +473,12 @@ const events = [
       time: "12 PM - 3 PM",
       highlight: true,
       description:
-        "During the Closing Lunch, delegates may look forward to exciting performances and activities under the grand ballroom lights. While it's sad to say goodbye, we hope that you'll bring along the lasting memories and newfound friendships made during ISYF 2024!",
+        "During the Closing Lunch, delegates may look forward to exciting performances and activities under the grand ballroom lights. While it's sad to say goodbye, we hope that you'll bring along the lasting memories and newfound friendships made during ISYF 2025!",
     },
     {
       name: "Final Departure",
       time: "3 PM",
-      description: "Thanks for coming for ISYF 2024!",
+      description: "Thanks for coming for ISYF 2025!",
     },
   ],
 ];

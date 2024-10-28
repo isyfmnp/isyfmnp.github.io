@@ -1,8 +1,8 @@
 <template>
   <Masthead>
-    <h1>About ISYF 2024</h1>
+    <h1>About ISYF 2025</h1>
     <h3>
-      Our goals, the people you'll get to meet, and who we (the organisers) are!
+      About the event theme and goals!
     </h3>
   </Masthead>
 

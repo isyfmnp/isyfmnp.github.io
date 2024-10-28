@@ -1,7 +1,7 @@
 <template>
   <div id="page">
     <Head>
-      <Title>ISYF 2024</Title>
+      <Title>ISYF 2025</Title>
     </Head>
     <NavBar />
     <ButtonScroll />
