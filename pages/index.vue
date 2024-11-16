@@ -52,8 +52,8 @@
           />
           <p class="sign">Dear Student Delegates and Educators,</p>
           <p>
-            Welcome to the 16th International Science Youth Forum (ISYF) @
-            Singapore, held from 8 to 12 January 2024!
+            Welcome to the 17th International Science Youth Forum (ISYF) @
+            Singapore, held from 6 to 10 January 2024!
           </p>
           <p>
             ISYF provides a platform for student delegates from around the world
