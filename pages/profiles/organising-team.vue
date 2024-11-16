@@ -6,10 +6,10 @@
     <div class="comm-showcase">
       <img
         class="comm-img"
-        :src="'/images/profiles/organising-team/' + comm.image + '.jpg'"
+        :src="'/images/profiles/organising-team/' + comm.image + '.webp'"
       />
       <div class="comm-description">
-        <p v-html="comm.description"></p>
+        <p v-html="comm.description" class="commDescription"></p>
         <p v-html="comm.imgCaption"></p>
       </div>
     </div>
@@ -17,6 +17,10 @@
 </template>
 
 <style scoped>
+
+.commDescription {
+  margin-top: 0rem;
+}
 .comm {
   margin-block: 3rem 3.5rem;
 }
@@ -27,6 +31,7 @@
   margin-block: 0 -0.25rem;
   margin-left: 0.5rem;
   line-height: 0.9em;
+  margin-bottom: 1rem;
 
   color: var(--primary);
 }
@@ -43,7 +48,7 @@
 }
 
 .comm-description {
-  margin-top: 0.25rem;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 900px) {
