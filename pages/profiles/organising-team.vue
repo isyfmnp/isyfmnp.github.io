@@ -47,10 +47,6 @@
   border-radius: 4px;
 }
 
-.comm-description {
-  margin-top: 0;
-}
-
 @media screen and (max-width: 900px) {
   .comm-title {
     font-size: 48px;
