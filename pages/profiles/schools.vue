@@ -5,7 +5,7 @@
     <section class="event" v-for="country in schools">
       <h3 class="event-title">{{ country.country }}</h3>
       <span class="profile" v-for="profile in country.schools">
-        <img class="profile-img" :src="'/images/profiles/schools/2025/' + profile.name + '.jpg'" alt="" />
+        <img class="profile-img" :src="'/images/profiles/schools/' + profile.name + '.jpg'" alt="" />
         <span class="name">{{ profile.name }}</span>
       </span>
     </section>
