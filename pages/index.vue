@@ -46,7 +46,7 @@
       <section>
         <Letter>
           <img
-            src="/images/profiles/organising-team/co-chairpersons.jpg"
+            src="/images/profiles/organising-team/co-chairpersons.webp"
             alt="Nguyen Chi Mai and Ling Jun Quan"
             class="cochairs-photo"
           />
