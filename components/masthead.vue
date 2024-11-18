@@ -21,6 +21,7 @@ onMounted(() => {
   position: absolute;
   inset: 0;
 }
+
 .masthead {
   text-align: center;
   --fg: var(--gray-100);
@@ -32,6 +33,7 @@ onMounted(() => {
   justify-content: center;
   overflow-x: hidden;
 }
+
 .masthead::before {
   content: "";
   z-index: -1;
@@ -51,6 +53,7 @@ onMounted(() => {
   .masthead h1 {
     font-size: 96px;
   }
+
   .masthead h3 {
     font-size: 22px;
   }
@@ -60,6 +63,7 @@ onMounted(() => {
   .masthead h1 {
     font-size: 128px;
   }
+
   .masthead h3 {
     font-size: 26px;
   }
