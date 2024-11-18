@@ -68,7 +68,8 @@
 @media screen and (max-width: 600px) {
   .comm-title {
     font-size: 38px;
-    margin-bottom: -0.075em;
+    margin-left: 0;
+    /* margin-bottom: -0.075em; */
   }
 }
 </style>
