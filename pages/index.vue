@@ -47,13 +47,13 @@
         <Letter>
           <img
             src="/images/profiles/organising-team/co-chairpersons.webp"
-            alt="Nguyen Chi Mai and Ling Jun Quan"
+            alt="Jacinda Kung Jiexin and Seah Yuheng"
             class="cochairs-photo"
           />
           <p class="sign">Dear Student Delegates and Educators,</p>
           <p>
             Welcome to the 17th International Science Youth Forum (ISYF) @
-            Singapore, held from 6 to 10 January 2024!
+            Singapore, held from 6 to 10 January 2025!
           </p>
           <p>
             ISYF provides a platform for student delegates from around the world
@@ -63,23 +63,23 @@
             Committee!
           </p>
           <p>
-            The theme for this year’s ISYF is: “Science and Technology for
-            Humanity: Building a Sustainable Future”. In a world challenged by
-            climate change and worsening disparities, mankind looks to the
-            potential of science and technology in resolving pressing global
-            issues. Through ISYF, we hope that delegates will consider the role
-            of science and technology in driving sustainable and inclusive
-            development, and be inspired to be the change they want to see.
+            The theme for this year’s ISYF is: “Innovation Unified: Towards a 
+            better future”. In a world riddled with complex global challenges, 
+            unity in the pursuit of novel ideas and groundbreaking discoveries 
+            is of paramount importance to pave the way for a better future. 
+            Through ISYF, we hope that our young scientists will envision a 
+            future where science and technology can be utilised for collective 
+            innovation to drive positive change!
           </p>
           <p>
-            The Organising Committee of ISYF 2024 looks forward to meeting you
+            The Organising Committee of ISYF 2025 looks forward to meeting you
             and we hope that you will have a fruitful time in Singapore!
           </p>
           <p class="sign">
             Warmest regards, <br />
-            Ling Jun Quan and Nguyen Chi Mai <br />
+            Jacinda Kung Jiexin and Seah Yuheng <br />
             Co-Chairpersons <br />
-            ISYF 2024 Student Organising Committee <br />
+            ISYF 2025 Student Organising Committee <br />
           </p>
         </Letter>
       </section>
