@@ -52,33 +52,33 @@
           </ul>
         </div>
       </div>
-      
-      <a class="item" href="/media/photos">
+<!--       
+      <a class="item" href="/photos">
         <span class="item-text">Photos</span>
       </a>
+       -->
       
-      <!--
       <div class="closed" :class="{ open: profilesOpen }">
         <a class="item" @click="profilesOpen = !profilesOpen">
-           remember to add class = "item blocked"
-          <span class="item-text"> Media </span>
+           <!-- remember to add class = "item blocked" -->
+          <span class="item-text"> Photos </span>
           <span class="material-icons-outlined indicator">chevron_right</span>
         </a>
         <div class="subitems-wrapper">
           <ul class="subitems">
             <li>
-              <a href="/media/photos">
-                <span class="item-text">Photos</span>
+              <a href="/photos/2024">
+                <span class="item-text">2024</span>
               </a>
             </li>
             <li class="blocked">
-              <a href="/media/reflections">
-                <span class="item-text">Reflections</span>
+              <a href="/photos/2025">
+                <span class="item-text">2025</span>
               </a>
             </li>
           </ul>
         </div>
-      </div>-->
+      </div>
       
 
       <a class="item" href="/faq">
