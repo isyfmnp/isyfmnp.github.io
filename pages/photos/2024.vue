@@ -35,7 +35,7 @@
             <img :src="link" />
           </div>
           <div class="slider-empty" v-else>
-            <img src="~/assets/images/shrug.webp">
+            <img src="/images/shrug.webp">
             <span>Sorry, nothing available yet!</span>
           </div>
         </div>
@@ -374,15 +374,15 @@ function resizePhoto() {
 }
 
 function fetchPhotos() {
-  // Fetch photos from assets folder
+  // Fetch photos from images folder
   // Glob imports have to be static :eyeroll: so i have to statically import each one 
   let gallery = []
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/assets/images/2024/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/2024/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
 
   return gallery
 }
