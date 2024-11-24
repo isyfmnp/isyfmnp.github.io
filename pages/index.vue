@@ -15,8 +15,7 @@
         <div class="detail-list">
           <div class="detail">
             <span class="material-icons-outlined small-icon">
-              calendar_month </span
-            >6-10 January 2025
+              calendar_month </span>6-10 January 2025
           </div>
           <div class="seperator"></div>
           <div class="detail">
@@ -45,11 +44,8 @@
     <div>
       <section>
         <Letter>
-          <img
-            src="/images/profiles/organising-team/co-chairpersons.webp"
-            alt="Jacinda Kung Jiexin and Seah Yuheng"
-            class="cochairs-photo"
-          />
+          <img src="/images/profiles/organising-team/co-chairpersons.webp" alt="Jacinda Kung Jiexin and Seah Yuheng"
+            class="cochairs-photo" />
           <p class="sign">Dear Student Delegates and Educators,</p>
           <p>
             Welcome to the 17th International Science Youth Forum (ISYF) @
@@ -63,12 +59,12 @@
             Committee!
           </p>
           <p>
-            The theme for this year’s ISYF is: “Innovation Unified: Towards a 
-            better future”. In a world riddled with complex global challenges, 
-            unity in the pursuit of novel ideas and groundbreaking discoveries 
-            is of paramount importance to pave the way for a better future. 
-            Through ISYF, we hope that our young scientists will envision a 
-            future where science and technology can be utilised for collective 
+            The theme for this year’s ISYF is: “Innovation Unified: Towards a
+            better future”. In a world riddled with complex global challenges,
+            unity in the pursuit of novel ideas and groundbreaking discoveries
+            is of paramount importance to pave the way for a better future.
+            Through ISYF, we hope that our young scientists will envision a
+            future where science and technology can be utilised for collective
             innovation to drive positive change!
           </p>
           <p>
@@ -207,11 +203,10 @@
   ); /* (1300, 30rem), (1600, 40rem) */
   --bg-info-width: 80vw;
   --info-padding: 3rem;
-  --info-padding: clamp(
-    1.5rem,
-    0.0675vw - 20.25px,
-    3rem
-  ); /* (700, 1.5rem), (1100, 3rem) */
+  --info-padding: clamp(1.5rem,
+      0.0675vw - 20.25px,
+      3rem);
+  /* (700, 1.5rem), (1100, 3rem) */
 
   --deco-size: 180px;
 
@@ -224,15 +219,18 @@
   border-bottom: 5px solid var(--primary);
   border-top: 1px solid var(--fg);
 }
+
 @media screen and (max-width: 39rem) {
   .banner {
     --info-width: calc(100vw - 2 * var(--info-padding));
     --bg-info-width: 60vw;
   }
 }
+
 .banner.normal {
   --bg-info-width: var(--info-width);
 }
+
 .background {
   background-image: url("/images/clocktower-6.jpeg");
   filter: brightness(0.7);
@@ -241,6 +239,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 @media screen and (max-width: 39rem) {
   .banner {
     position: relative;
@@ -248,15 +247,18 @@
     --fg: var(--bg);
     filter: drop-shadow(2px 2px 7px hsla(var(--gray-900-hsla), 0.25));
   }
+
   .background {
     position: absolute;
     inset: 0;
     z-index: -1;
     filter: brightness(0.5);
   }
+
   .banner .title {
     margin-block: 0.5rem 1rem;
   }
+
   .banner .detail-list {
     --fg: var(--gray-950);
     --bg: var(--gray-100);
@@ -268,6 +270,7 @@
     width: calc(var(--info-width) + 1 * var(--neg-margin));
   }
 }
+
 @media screen and (max-height: 850px) and (max-width: 39rem) {
   .banner .info.info {
     justify-content: flex-end;
@@ -282,23 +285,25 @@
   justify-content: center;
   padding-bottom: 13%;
 }
+
 .banner .logo {
   height: var(--deco-size);
   width: var(--deco-size);
   margin: -0.5rem -1rem;
 }
+
 .title-wrapper {
   position: relative;
   margin-right: calc(100% - 100vw + 2rem);
 }
+
 .title {
   padding-right: 2rem;
   font-size: 42px;
-  font-size: clamp(
-    42px,
-    calc(9vw - 14px),
-    96px
-  ); /* 42px, (700, 52px), (900, 72px), (1200, 96px) */
+  font-size: clamp(42px,
+      calc(9vw - 14px),
+      96px);
+  /* 42px, (700, 52px), (900, 72px), (1200, 96px) */
   max-width: 90rem;
   margin-block: 1rem;
 }
@@ -309,6 +314,7 @@
   transition: margin-left var(--trn-time) var(--trn-func);
   filter: drop-shadow(2px 2px 7px hsla(var(--gray-900-hsla), 0.25));
 }
+
 .title2-wrapper {
   position: absolute;
   top: 0;
@@ -324,6 +330,7 @@
   border: 1px solid var(--fg);
   border-radius: 4px;
 }
+
 .detail-list .detail {
   font-weight: 500;
   padding: 0.75rem;
@@ -332,23 +339,28 @@
   align-items: center;
   gap: 0.375rem;
 }
+
 .detail-list .seperator {
   width: 1px;
   background-color: var(--fg);
 }
+
 @media screen and (max-width: 39rem) {
   .detail-list {
     flex-direction: column;
     border: none;
   }
+
   .detail-list .detail {
     gap: 0.5rem;
   }
+
   .detail-list .seperator {
     width: 100%;
     height: 1px;
   }
 }
+
 .small-icon {
   color: var(--primary);
   font-size: 20px;
@@ -500,10 +512,12 @@
   border-radius: 4px;
   float: right;
 }
+
 @media screen and (min-width: 900px) {
   .cochairs-photo {
     width: max(20vw, 32rem);
     margin: 1rem;
+    margin-top: 4.2rem;
   }
 }
 
@@ -519,11 +533,12 @@
 }
 
 /* ========== DOCUMENTS SHORTCUT ========== */
-:deep(.documents a){
+:deep(.documents a) {
   --fg: var(--primary);
   --bg: var(--gray-100);
   --bg-hover: var(--gray-300);
 }
+
 .documents {
   margin-block: 5rem 7rem;
   --fg: var(--gray-100);
@@ -532,16 +547,19 @@
   padding: 0.125rem 1.5rem 0.75rem;
   border-radius: 8px;
 }
+
 .docs-title {
   line-height: 0.95em;
   margin-block: 2rem 0.25rem;
 }
+
 .docs-subtitle {
   display: block;
   font-family: var(--font-display);
   font-size: 18px;
   margin-bottom: 0.75rem;
 }
+
 .docs-prompt {
   display: block;
   margin-block: 1rem;
@@ -553,6 +571,7 @@
   --fg: var(--primary);
   margin-block: 3.5rem;
 }
+
 .button-row .btn {
   margin-block: -1px;
   padding-block: 0.5rem;
@@ -581,7 +600,8 @@
   overflow: hidden;
   border: 1px solid var(--gray-200);
 }
-.supporters > * {
+
+.supporters>* {
   display: grid;
   place-items: center;
   width: 9rem;
@@ -590,7 +610,8 @@
   overflow: hidden;
   height: 100%;
 }
-.supporters > *::before {
+
+.supporters>*::before {
   content: "open_in_new";
   position: absolute;
   top: 0.5rem;
@@ -604,7 +625,8 @@
   transform: translateX(3rem);
   transition: 200ms transform;
 }
-.supporters > *::after {
+
+.supporters>*::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -614,19 +636,24 @@
 
   background-color: var(--primary-100);
 }
-.supporters > .null::after {
+
+.supporters>.null::after {
   content: none;
 }
-.supporters > *:hover::before {
+
+.supporters>*:hover::before {
   transform: translateX(0);
 }
-.supporters > *:active::before {
+
+.supporters>*:active::before {
   transform: scale(1.2);
 }
-.supporters > *:hover::after {
+
+.supporters>*:hover::after {
   transform: translateY(0);
 }
-.supporters > *:active::after {
+
+.supporters>*:active::after {
   background-color: var(--primary-200);
 }
 
@@ -636,6 +663,7 @@
   font-size: 14px;
   opacity: 0.75;
 }
+
 .supporters img {
   width: 100%;
 }
