@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   router: {
-    base: '/isyf2025/'
+    base: '/isyf2025/',
   },
 
   ssr: false,
