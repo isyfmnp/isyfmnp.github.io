@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
-  app: {
-    baseURL: '/isyf2025/'
-  },
 
   ssr: false,
 
@@ -24,6 +21,7 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
+    baseURL: '/isyf2025/'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
