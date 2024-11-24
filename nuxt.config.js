@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
+  app: {
+    buildAssetsDir: '/isyf2025/',
+    pageTransition: { name: "page", mode: "out-in" },
+  },
 
   ssr: false,
 
@@ -17,11 +21,6 @@ export default defineNuxtConfig({
       { name: "format-detection", content: "telephone=no" },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
-  },
-
-  app: {
-    pageTransition: { name: "page", mode: "out-in" },
-    buildAssetsDir: '/isyf2025/'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
