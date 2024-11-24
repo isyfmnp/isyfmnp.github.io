@@ -42,7 +42,7 @@
     -->
 
     <div>
-      <section>
+      <section id="letterid">
         <Letter>
           <img src="/images/profiles/organising-team/co-chairpersons.webp" alt="Jacinda Kung Jiexin and Seah Yuheng"
             class="cochairs-photo" />
@@ -186,6 +186,10 @@
 <style scoped>
 @import url("~/assets/css/cards.css");
 
+.material-icons-outlined.small-icon {
+  color: hsl(135, 55%, 84%);
+}
+
 .banner {
   display: block;
   margin-inline: calc(50% - 50vw);
@@ -306,10 +310,11 @@
   /* 42px, (700, 52px), (900, 72px), (1200, 96px) */
   max-width: 90rem;
   margin-block: 1rem;
+  color: antiquewhite
 }
 
 .title2 {
-  color: var(--gray-100);
+  color: white;
   margin-left: calc((var(--bg-info-width) + var(--info-padding)) * -1);
   transition: margin-left var(--trn-time) var(--trn-func);
   filter: drop-shadow(2px 2px 7px hsla(var(--gray-900-hsla), 0.25));
@@ -519,6 +524,10 @@
     margin: 1rem;
     margin-top: 4.2rem;
   }
+}
+
+#letterid p {
+  color: hsl(72, 5%, 21%) !important;
 }
 
 /* ========== CONTENT ========== */

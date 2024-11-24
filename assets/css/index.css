@@ -10,19 +10,22 @@
   --font-display: "Fraunces", "IBM Plex Sans", "Open Sans",
     "Helvetica Now Display DW", sans-serif;
 
-  --primary-hue: 179;
+  --primary-hue: 253;
 
-  --gray-950: hsl(var(--primary-hue), 0%, 5%);
-  --gray-900-hsla: var(--primary-hue), 0%, 20%;
+  --gray-950: hsl(var(--primary-hue), 97%, 5%);
+  --gray-900-hsla: var(--primary-hue), 97%, 20%;
   --gray-900: hsl(var(--gray-900-hsla));
-  --gray-800: hsl(var(--primary-hue), 0%, 25%);
-  --gray-700: hsl(var(--primary-hue), 0%, 35%);
-  --gray-500: hsl(var(--primary-hue), 0%, 40%);
-  --gray-400: hsl(var(--primary-hue), 0%, 55%);
-  --gray-300: hsla(var(--primary-hue), 0%, 65%);
-  --gray-200: hsl(var(--primary-hue), 0%, 85%);
-  --gray-100-hsla: var(--primary-hue), 0%, 95%;
+  --gray-800: hsl(var(--primary-hue), 97%, 25%);
+  --gray-700: hsl(var(--primary-hue), 97%, 35%);
+  --gray-500: hsl(var(--primary-hue), 97%, 40%);
+  --gray-400: hsl(var(--primary-hue), 97%, 55%);
+  --gray-300: hsla(var(--primary-hue), 97%, 65%);
+  --gray-200: hsl(var(--primary-hue), 97%, 85%);
+  --gray-100-hsla: var(--primary-hue), 97%, 95%;
   --gray-100: hsl(var(--gray-100-hsla));
+  /* --actual-color: hsl(var(--primary-hue), 97%, 14%);
+  --actual-color-hsla: hsla(var(--primary-hue), 97%, 14%, 95%); */
+
 
   --fg: var(--gray-800);
   --fg-hsla: var(--gray-900-hsla);
@@ -65,16 +68,18 @@
 }
 
 * {
-  color: var(--fg);
+  color: hsl(135, 55%, 84%);
   scrollbar-color: var(--primary) var(--gray-200);
 }
 
 *::-webkit-scrollbar {
   width: 7px;
 }
+
 *::-webkit-scrollbar-track {
   background: var(--bg);
 }
+
 *::-webkit-scrollbar-thumb {
   background: var(--primary);
   border-radius: 3px;
@@ -85,6 +90,7 @@
   margin-top: -6rem;
   padding-top: 6rem;
 }
+
 @media screen and (min-width: 1100px) {
   .scroll-anchor {
     margin-top: -5rem;
@@ -93,7 +99,7 @@
 }
 
 html {
-  background-color: var(--bg);
+  background-color: var(--gray-900);
   margin: 0;
   padding: 0;
   color: var(--fg);
@@ -105,6 +111,7 @@ html {
   scroll-behavior: smooth;
   font-weight: 300;
 }
+
 body {
   margin: 0;
 }
@@ -116,6 +123,7 @@ h1 {
   margin: 2rem 0 1rem;
   font-weight: bold;
 }
+
 h2 {
   font-size: 34px;
   font-family: var(--font-display);
@@ -123,6 +131,7 @@ h2 {
   margin: 1.5rem 0 -0.5rem;
   font-weight: bold;
 }
+
 h3 {
   font-size: 22px;
   font-family: var(--font-display);
@@ -137,21 +146,27 @@ p {
   line-height: 1.6rem;
   margin: 1rem 0 1.75rem;
 }
+
 a {
-  color: var(--fg);
+  color: hsl(135, 55%, 84%);
 }
+
 hr {
   border: none;
 }
+
 ul {
   padding-left: 1.5rem;
 }
+
 ul li {
   margin-bottom: 0.5rem;
 }
+
 ul li::marker {
   padding-right: 0.5rem;
 }
+
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -183,6 +198,7 @@ main {
 section {
   margin-block: 2rem;
 }
+
 section.colored {
   padding-block: 1rem;
 }
