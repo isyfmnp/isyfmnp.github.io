@@ -21,7 +21,7 @@ export default defineNuxtConfig({
 
   app: {
     pageTransition: { name: "page", mode: "out-in" },
-    baseURL: '/isyf2025/'
+    buildAssetsDir: '/isyf2025/'
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
