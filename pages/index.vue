@@ -44,7 +44,7 @@
     <div>
       <section>
         <Letter>
-          <img src="public/images/profiles/organising-team/co-chairpersons.webp"
+          <img src="~/public/images/profiles/organising-team/co-chairpersons.webp"
             alt="Jacinda Kung Jiexin and Seah Yuheng" class="cochairs-photo" />
           <p class="sign">Dear Student Delegates and Educators,</p>
           <p>
