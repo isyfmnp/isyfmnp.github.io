@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
   app: {
-    buildAssetsDir: '/isyf2025/',
+    baseURL: '/isyf2025/',
     pageTransition: { name: "page", mode: "out-in" },
   },
 
