@@ -75,6 +75,18 @@ function resetLink() {
 }
 
 const profiles = [
+{
+    event: "Keynote Lecture",
+    profiles: [
+      {
+        name: "Professor Lim Keng Hui",
+        status: "Guest of Honour",
+        image: "lim-keng-hui",
+        description:
+          "Placeholder text. Profile to be completed together with image.",
+      },
+    ],
+  },
   {
     event: "Keynote Lecture",
     profiles: [
