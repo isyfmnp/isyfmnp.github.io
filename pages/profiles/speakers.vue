@@ -75,7 +75,7 @@ function resetLink() {
 }
 
 const profiles = [
-{
+  {
     event: "Keynote Lecture",
     profiles: [
       {
@@ -85,11 +85,6 @@ const profiles = [
         description:
           "Placeholder text. Profile to be completed together with image.",
       },
-    ],
-  },
-  {
-    event: "Keynote Lecture",
-    profiles: [
       {
         name: "Professor Hartmut Michel",
         status: "Keynote Speaker",
