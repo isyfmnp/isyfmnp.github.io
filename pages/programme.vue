@@ -468,7 +468,7 @@ const events = [
     },
     {
       name: "Poster Exhibition",
-      time: "1:30 PM - 3:30 PM",
+      time: "3 PM - 4:30 PM",
       highlight: true,
     },
     {
