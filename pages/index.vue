@@ -43,7 +43,7 @@
 
     <div>
       <section>
-        <Letter>
+        <!-- <Letter> -->
           <img src="/images/profiles/organising-team/co-chairpersons.webp"
             alt="Jacinda Kung Jiexin and Seah Yuheng" class="cochairs-photo" />
           <p class="sign">Dear Student Delegates and Educators,</p>
@@ -77,7 +77,7 @@
             Co-Chairpersons <br />
             ISYF 2025 Student Organising Committee <br />
           </p>
-        </Letter>
+        <!-- </Letter> -->
       </section>
 
       <section>
