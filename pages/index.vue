@@ -525,7 +525,7 @@
 .letter1 {
   border-radius: 8px;
   border: 1px solid var(--fg);
-  margin: 4rem -1rem 7rem;
+  margin: 4rem -1rem 4rem;
   padding: 1rem 1.5rem 0.125rem;
   font-weight: 400;
   font-family: var(--font-display);
