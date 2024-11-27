@@ -10,7 +10,7 @@
           </span>
 
           <p>Made with ♡ by Tang Xuyuan and Nguyen Thien Minh Tuan</p>
-          <p>Updated and maintained by Alvin Liu and Zhi Xing</p>
+          <p>Updated and maintained by Alvin Liu En Yu and Quek Zhi Xing</p>
           <p>Special thanks to Studio Ardent for photos & video</p>
 
           <p style="font-style: italic">
