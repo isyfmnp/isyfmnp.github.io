@@ -42,41 +42,41 @@
     -->
 
     <div>
-      <section>
+      <section class="letter1">
         <!-- <Letter> -->
-          <img src="/images/profiles/organising-team/co-chairpersons.webp"
-            alt="Jacinda Kung Jiexin and Seah Yuheng" class="cochairs-photo" />
-          <p class="sign">Dear Student Delegates and Educators,</p>
-          <p>
-            Welcome to the 17th International Science Youth Forum (ISYF) @
-            Singapore, held from 6 to 10 January 2025!
-          </p>
-          <p>
-            ISYF provides a platform for student delegates from around the world
-            to share their passion for science, technology and research whilst
-            building long-lasting friendships. We hope that you will enjoy the
-            lineup of activities meticulously planned by our Organising
-            Committee!
-          </p>
-          <p>
-            The theme for this year’s ISYF is: “Innovation Unified: Towards a
-            better future”. In a world riddled with complex global challenges,
-            unity in the pursuit of novel ideas and groundbreaking discoveries
-            is of paramount importance to pave the way for a better future.
-            Through ISYF, we hope that our young scientists will envision a
-            future where science and technology can be utilised for collective
-            innovation to drive positive change!
-          </p>
-          <p>
-            The Organising Committee of ISYF 2025 looks forward to meeting you
-            and we hope that you will have a fruitful time in Singapore!
-          </p>
-          <p class="sign">
-            Warmest regards, <br />
-            Jacinda Kung Jiexin and Seah Yuheng <br />
-            Co-Chairpersons <br />
-            ISYF 2025 Student Organising Committee <br />
-          </p>
+        <img src="/images/profiles/organising-team/co-chairpersons.webp" alt="Jacinda Kung Jiexin and Seah Yuheng"
+          class="cochairs-photo" />
+        <p class="sign">Dear Student Delegates and Educators,</p>
+        <p>
+          Welcome to the 17th International Science Youth Forum (ISYF) @
+          Singapore, held from 6 to 10 January 2025!
+        </p>
+        <p>
+          ISYF provides a platform for student delegates from around the world
+          to share their passion for science, technology and research whilst
+          building long-lasting friendships. We hope that you will enjoy the
+          lineup of activities meticulously planned by our Organising
+          Committee!
+        </p>
+        <p>
+          The theme for this year’s ISYF is: “Innovation Unified: Towards a
+          better future”. In a world riddled with complex global challenges,
+          unity in the pursuit of novel ideas and groundbreaking discoveries
+          is of paramount importance to pave the way for a better future.
+          Through ISYF, we hope that our young scientists will envision a
+          future where science and technology can be utilised for collective
+          innovation to drive positive change!
+        </p>
+        <p>
+          The Organising Committee of ISYF 2025 looks forward to meeting you
+          and we hope that you will have a fruitful time in Singapore!
+        </p>
+        <p class="sign">
+          Warmest regards, <br />
+          Jacinda Kung Jiexin and Seah Yuheng <br />
+          Co-Chairpersons <br />
+          ISYF 2025 Student Organising Committee <br />
+        </p>
         <!-- </Letter> -->
       </section>
 
@@ -515,12 +515,28 @@
 
 @media screen and (min-width: 900px) {
   .cochairs-photo {
-    width: max(20vw, 32rem);
+    width: max(20vw, 30rem);
     margin: 1rem;
-    margin-top: 4.2rem;
+    margin-top: 4.5rem;
+    margin-bottom: 0;
   }
 }
 
+.letter1 {
+  border-radius: 8px;
+  border: 1px solid var(--fg);
+  margin: 4rem -1rem 7rem;
+  padding: 1rem 1.5rem 0.125rem;
+  font-weight: 400;
+  font-family: var(--font-display);
+  background-color: #f6eee3;
+}
+
+@media screen and (min-width:900px){
+  .letter1{
+    padding: 1rem 3rem 0.125rem 1.5rem;
+  }
+}
 /* ========== CONTENT ========== */
 .sign {
   font-style: italic;
