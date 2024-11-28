@@ -405,32 +405,28 @@ const events = [
         "Ever wanted to interact with eminent scientists from around the world? Through our various Masterclasses,  Nobel Laureates and eminent scientists will share about their cutting-edge research, and their passion for science. After which, delegates will have the opportunity to pose questions to the scientists and learn more about the scientific world",
     },
     {
-      name: "Cultural Exhibition",
-      time: "11 AM - 12:30 PM",
-      highlight: true,
-      description: "",
-    },
-    {
       name: "Lunch",
-      time: "12:30 PM",
+      time: "11:15 AM - 12:30 PM",
     },
     {
       name: "Depart for Science Centre",
-      time: "1:30 PM",
+      time: "12:30 PM",
     },
     {
       name: "Science Quest",
-      time: "2 PM - 5 PM",
+      time: "1 PM - 4 PM",
       highlight: true,
       description: "",
     },
     {
       name: "Return to HCIBS",
-      time: "5 PM",
+      time: "4 PM",
     },
     {
-      name: "Dinner",
-      time: "6 PM",
+      name: "Cultural Exhibition and Dinner",
+      time: "5 PM - 7 PM",
+      highlight: true,
+      description: "",
     },
     {
       name: "Cultural Hour III @ LT2",
