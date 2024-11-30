@@ -339,7 +339,7 @@ const events = [
       time: "10 AM",
       highlight: true,
       description:
-        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture.",
+        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow Chorng Haur from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture.",
     },
     {
       name: "Lunch at NUS",
@@ -405,32 +405,28 @@ const events = [
         "Ever wanted to interact with eminent scientists from around the world? Through our various Masterclasses,  Nobel Laureates and eminent scientists will share about their cutting-edge research, and their passion for science. After which, delegates will have the opportunity to pose questions to the scientists and learn more about the scientific world",
     },
     {
-      name: "Cultural Exhibition",
-      time: "11 AM - 12:30 PM",
-      highlight: true,
-      description: "",
-    },
-    {
       name: "Lunch",
-      time: "12:30 PM",
+      time: "11:15 AM - 12:30 PM",
     },
     {
       name: "Depart for Science Centre",
-      time: "1:30 PM",
+      time: "12:30 PM",
     },
     {
       name: "Science Quest",
-      time: "2 PM - 5 PM",
+      time: "1 PM - 4 PM",
       highlight: true,
       description: "",
     },
     {
       name: "Return to HCIBS",
-      time: "5 PM",
+      time: "4 PM",
     },
     {
-      name: "Dinner",
-      time: "6 PM",
+      name: "Cultural Exhibition and Dinner",
+      time: "5 PM - 7 PM",
+      highlight: true,
+      description: "",
     },
     {
       name: "Cultural Hour III @ LT2",
@@ -468,7 +464,7 @@ const events = [
     },
     {
       name: "Poster Exhibition",
-      time: "1:30 PM - 3:30 PM",
+      time: "3 PM - 4:30 PM",
       highlight: true,
     },
     {
