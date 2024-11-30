@@ -511,6 +511,8 @@
   margin: 1rem 0;
   border-radius: 4px;
   float: right;
+  border: 100px;
+  border-color: black;
 }
 
 @media screen and (min-width: 900px) {
@@ -532,11 +534,12 @@
   background-color: #f6eee3;
 }
 
-@media screen and (min-width:900px){
-  .letter1{
+@media screen and (min-width:900px) {
+  .letter1 {
     padding: 1rem 3rem 0.125rem 1.5rem;
   }
 }
+
 /* ========== CONTENT ========== */
 .sign {
   font-style: italic;
