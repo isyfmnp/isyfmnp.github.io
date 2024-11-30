@@ -511,8 +511,7 @@
   margin: 1rem 0;
   border-radius: 4px;
   float: right;
-  border: 100px;
-  border-color: black;
+  border: 1px solid black;
 }
 
 @media screen and (min-width: 900px) {
