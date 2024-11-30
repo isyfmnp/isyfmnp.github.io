@@ -339,7 +339,7 @@ const events = [
       time: "10 AM",
       highlight: true,
       description:
-        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture.",
+        "Wonder what happens when you zoom in, in and in? Want to discover intriguing properties of matter at the nanoscale? Look no further! Delegates will delve into the nanoworld with the friendly and brilliant Professor Sow Chorng Haur from the National University of Singapore! Through demonstrations and interactive activities, delegates may look forward to exploring current and future applications of nanotechnology with this fun-filled lecture.",
     },
     {
       name: "Lunch at NUS",

@@ -87,8 +87,8 @@
             Prepare to embark on an electrifying journey at ISYF, a spectacular
             convergence of science, culture, and boundless discovery! Traverse
             the dynamic Singapore Discovery Trail, an expedition weaving through
-            urban marvels and verdant oases. Engage with Professor Sow for an
-            exhilarating dive into the Nanoworld, unlocking mind-bending
+            urban marvels and verdant oases. Engage with Professor Sow Chorng Haur 
+            for an exhilarating dive into the Nanoworld, unlocking mind-bending
             nano-scale wonders and futuristic applications.
           </p>
           <p>
