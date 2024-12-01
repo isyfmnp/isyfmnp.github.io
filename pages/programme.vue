@@ -315,7 +315,7 @@ const events = [
       time: "6 PM",
     },
     {
-      name: "Briefing and Cultural Hour I",
+      name: "Briefing and Cultural Hour",
       time: "7 PM - 7:30PM",
       description: "The Cultural Hour and Exhibition provides the opportunity for delegates from all over the world to showcase their unique history, culture and tradition! Through this, delegates will be able to traverse the global village, better understand each other’s cultures, and view the world from a global perspective.",
     },
@@ -386,7 +386,7 @@ const events = [
       time: "6 PM - 7 PM",
     },
     {
-      name: "Cultural Hour II @ LT2",
+      name: "Cultural Hour @ LT2",
       time: "7 PM - 9 PM",
       highlight: true
     },
@@ -429,7 +429,7 @@ const events = [
       description: "",
     },
     {
-      name: "Cultural Hour III @ LT2",
+      name: "Cultural Hour @ LT2",
       time: "7 PM - 9 PM",
       highlight: true,
     },
