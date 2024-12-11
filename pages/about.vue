@@ -29,7 +29,7 @@
           <p>
             ISYF aims to provide students who are highly inquisitive and
             passionate about the sciences with ample opportunities to share and
-            discuss their interest in Science, technology and scientific
+            discuss their interests in Science, technology and scientific
             research. They will be exposed to many fields of science which will
             broaden their outlook and understanding of the scientific world.
             Invited Nobel laureates and eminent scientists will inspire them

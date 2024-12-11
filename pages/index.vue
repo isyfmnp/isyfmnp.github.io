@@ -55,7 +55,7 @@
           ISYF provides a platform for student delegates from around the world
           to share their passion for science, technology and research whilst
           building long-lasting friendships. We hope that you will enjoy the
-          lineup of activities meticulously planned by our Organising
+          lineup of activities planned by our Organising
           Committee!
         </p>
         <p>
@@ -68,7 +68,7 @@
           innovation to drive positive change!
         </p>
         <p>
-          The Organising Committee of ISYF 2025 looks forward to meeting you
+          The Organising Committee of ISYF 2025 look forward to meeting you
           and we hope that you will have a fruitful time in Singapore!
         </p>
         <p class="sign">
