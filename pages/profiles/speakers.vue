@@ -61,6 +61,7 @@
 
 .collage .profile-img{
   outline: 1px solid var(--fg);
+  border-radius: 8px;
 }
 </style>
 
