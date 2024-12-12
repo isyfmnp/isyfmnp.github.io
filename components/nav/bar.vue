@@ -52,51 +52,23 @@
           </ul>
         </div>
       </div>
-<!--       
+      <!--       
       <a class="item" href="/photos">
         <span class="item-text">Photos</span>
       </a>
        -->
-      
-      <div class="closed" :class="{ open: profilesOpen }">
-        <a class="item" @click="profilesOpen = !profilesOpen">
-           <!-- remember to add class = "item blocked" -->
-          <span class="item-text"> Photos </span>
-          <span class="material-icons-outlined indicator">chevron_right</span>
-        </a>
-        <div class="subitems-wrapper">
-          <ul class="subitems">
-            <li>
-              <a href="/photos/2024">
-                <span class="item-text">2024</span>
-              </a>
-            </li>
-            <li class="blocked">
-              <a href="/photos/2025">
-                <span class="item-text">2025</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
+      <a class="item" href="/photos">
+        <span class="item-text">Photos</span>
+      </a>
 
       <a class="item" href="/faq">
         <span class="item-text"> FAQ</span>
       </a>
       <div class="socials">
-        <a
-          class="item"
-          href="https://www.instagram.com/isyf.2025/"
-          target="_blank"
-        >
+        <a class="item" href="https://www.instagram.com/isyf.2025/" target="_blank">
           <InstagramIcon />
         </a>
-        <a
-          class="item"
-          href="https://www.youtube.com/channel/UCs9CbJcxC2x8OPYiNx5QDTg"
-          target="_blank"
-        >
+        <a class="item" href="https://www.youtube.com/channel/UCs9CbJcxC2x8OPYiNx5QDTg" target="_blank">
           <YoutubeIcon />
         </a>
       </div>
@@ -106,10 +78,12 @@
 
 <style scoped>
 @import url("~/assets/css/blocked.css");
+
 .material-icons-outlined {
   scale: 0.8;
   transform: translateY(1px);
 }
+
 a {
   text-decoration: none;
 }
@@ -131,6 +105,7 @@ nav {
   transition: background-color 100ms, color 200ms, top 100ms, left 100ms,
     right 100ms;
 }
+
 nav.transparent {
   padding-top: 0;
 
@@ -154,6 +129,7 @@ nav.transparent {
   align-items: center;
   gap: 0.5rem;
 }
+
 .transparent .stamp {
   margin-left: -0.25rem;
 }
@@ -161,12 +137,15 @@ nav.transparent {
 .stamp .logo {
   height: 2rem;
 }
+
 .dark {
   display: none;
 }
+
 .transparent .light {
   display: none;
 }
+
 .transparent .dark {
   display: block;
 }
@@ -199,6 +178,7 @@ nav.transparent {
 .hamburger {
   cursor: pointer;
 }
+
 .hamburger .material-icons {
   width: 24px;
   height: 24px;
@@ -208,6 +188,7 @@ nav.transparent {
 .transparent .hamburger {
   margin-right: -0.25rem;
 }
+
 .transparent .hamburger .material-icons {
   color: white;
 }
@@ -226,6 +207,7 @@ nav.transparent {
   transition: opacity 200ms cubic-bezier(0.77, 0, 0.175, 1),
     visibility 200ms cubic-bezier(0.77, 0, 0.175, 1);
 }
+
 .menu.open {
   opacity: 1;
   visibility: visible;
@@ -236,6 +218,7 @@ nav.transparent {
   right: 0;
   letter-spacing: 0.05rem;
 }
+
 .menu {
   z-index: 120;
   position: fixed;
@@ -269,6 +252,7 @@ nav.transparent {
   margin-left: -2rem;
   transition: 100ms margin;
 }
+
 .menu.open .stamp {
   margin-left: -0.25rem;
 }
@@ -296,6 +280,7 @@ nav.transparent {
   height: 0rem;
   transition: height 200ms;
 }
+
 .menu .subitems {
   list-style: none;
   margin: 0.45rem 0 0.75rem;
@@ -310,6 +295,7 @@ nav.transparent {
   transform: translateY(-110px);
   transition: transform 200ms;
 }
+
 .menu .subitems a {
   display: flex;
   flex-direction: row;
@@ -319,10 +305,12 @@ nav.transparent {
 
   transition: color 200ms;
 }
+
 .menu .open .subitems-wrapper,
 .menu .closed:hover .subitems-wrapper {
   height: 120px;
 }
+
 .menu .open .subitems,
 .menu .closed:hover .subitems {
   transform: translateY(0);
@@ -350,12 +338,15 @@ nav.transparent {
   border-radius: 8px;
   border: 1px solid var(--gray-300);
 }
+
 .transparent .socials {
   border: 1px solid var(--gray-400);
 }
+
 .socials * {
   flex-grow: 0;
 }
+
 .menu .socials :deep(.item svg) {
   height: 17px;
   width: 17px;
@@ -363,13 +354,16 @@ nav.transparent {
   fill: var(--fg);
   transition: fill 200ms;
 }
+
 .menu .material-icons-outlined {
   transition: transform 200ms, color 200ms;
 }
+
 .menu .open .item .indicator,
 .menu .closed:hover .item .indicator {
   transform: rotate(90deg);
 }
+
 .menu .open .item,
 .menu .item:hover,
 .menu .subitems a:hover,
@@ -405,6 +399,7 @@ nav.transparent {
     --fg: var(--gray-900);
     --bg: var(--gray-100);
   }
+
   .transparent .menu {
     --fg: var(--gray-100);
     --bg: var(--gray-900);
@@ -428,13 +423,16 @@ nav.transparent {
     display: flex;
     align-items: center;
   }
+
   .menu .subitems .icon {
     display: none;
   }
+
   .transparent .item,
   .transparent .subitems a {
     color: var(--fg);
   }
+
   .transparent .socials .item :deep(svg) {
     fill: var(--fg);
   }
@@ -443,6 +441,7 @@ nav.transparent {
   .transparent .stamp {
     display: none;
   }
+
   .transparent {
     justify-content: center;
   }
@@ -452,10 +451,12 @@ nav.transparent {
     /* Parent of both item and subitem */
     position: relative;
   }
+
   .menu .closed .item {
     height: 4rem;
     margin-block: -24px;
   }
+
   .menu .subitems-wrapper {
     z-index: -1;
     position: absolute;
@@ -464,6 +465,7 @@ nav.transparent {
     padding: 0 2rem 2rem;
     margin: 0 -2rem -2rem;
   }
+
   .menu .subitems {
     position: relative;
     z-index: -1;
@@ -479,9 +481,11 @@ nav.transparent {
 
     transform: translateY(-170px);
   }
+
   .menu .subitems a {
     gap: 0.5rem;
   }
+
   nav.transparent .menu .subitems {
     background-color: transparent;
     border: 1px solid var(--gray-300);
@@ -489,9 +493,11 @@ nav.transparent {
     backdrop-filter: blur(3px);
     box-shadow: none;
   }
+
   .item.close-button {
     display: none;
   }
+
   .socials {
     margin-top: 0;
   }
