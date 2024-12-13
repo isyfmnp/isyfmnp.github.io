@@ -128,7 +128,7 @@
         <h2>Who are the organisers?</h2>
         <p>
           ISYF is hosted and organised by Hwa Chong Institution’s very own
-          Student Science Research Club (SSRC), with the support of the Ministry
+          Science Student Research Club (SSRC), with the support of the Ministry
           of Education (MOE).
         </p>
         <ul class="supporters">
