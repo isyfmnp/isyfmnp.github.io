@@ -58,6 +58,12 @@
   border-radius: 2rem;
   border: 1px solid var(--primary);
 }
+
+.collage .profile-img{
+  outline: 1px solid var(--fg);
+  border-radius: 8px;
+}
+
 </style>
 
 <script setup>
