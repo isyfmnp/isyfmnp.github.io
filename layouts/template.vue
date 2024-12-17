@@ -2,9 +2,9 @@
   <div id="page">
     <Head>
       <Title>ISYF 2025</Title>
-      <Meta property="og:title" content="ISYF 2025" />
-      <Meta property="og:url" content="https://isyf.hci.edu.sg" />
-      <Meta property="og:image" content="https://isyf.hci.edu.sg/icon_light.png" />
+      <Meta property="og:title" content="ISYF 2025"/>
+      <Meta property="og:url" content="https://isyf.hci.edu.sg"/>
+      <Meta property="og:image" content="https://isyf.hci.edu.sg/icon_light_solid.png"/>
     </Head>
     <NavBar />
     <ButtonScroll />
