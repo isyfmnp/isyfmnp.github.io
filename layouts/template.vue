@@ -48,10 +48,4 @@ onMounted(() => {
   });
 });
 
-useSeoMeta({
-  title: 'ISYF 2025',
-  ogTitle: 'ISYF 2025',
-  ogDescription: 'International Science Youth Forum 2025',
-  ogImage: 'https://isyf.hci.edu.sg/icon_light_solid.png',
-})
 </script>
