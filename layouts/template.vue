@@ -1,12 +1,5 @@
 <template>
   <div id="page">
-    <Head>
-      <Title>ISYF 2025</Title>
-      <Meta property="og:title" content="ISYF 2025"/>
-      <Meta property="og:description" content="International Science Youth Forum 2025"/>
-      <Meta property="og:url" content="https://isyf.hci.edu.sg"/>
-      <Meta property="og:image" content="https://isyf.hci.edu.sg/icon_light_solid.png"/>
-    </Head>
     <NavBar />
     <ButtonScroll />
 
@@ -54,4 +47,11 @@ onMounted(() => {
     });
   });
 });
+
+useSeoMeta({
+  title: 'ISYF 2025',
+  ogTitle: 'ISYF 2025',
+  ogDescription: 'International Science Youth Forum 2025',
+  ogImage: 'https://isyf.hci.edu.sg/icon_light_solid.png',
+})
 </script>
