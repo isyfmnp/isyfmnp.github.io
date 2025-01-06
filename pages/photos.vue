@@ -389,4 +389,14 @@ const photos = fetchPhotos()
 definePageMeta({
   layout: "masthead",
 });
+
+// Loads high resolutions images in the background for quicker opening on demand
+// Removed since this involves transferring a very large amount of data, which could be a concern for mobile data and roaming plan users
+// photos.flat().forEach(url => {
+//   const link = document.createElement("link");
+//   link.rel = "prefetch";
+//   link.href = url.replace(".webp", "").replace("small", "big");
+//   document.head.appendChild(link);
+// });
+
 </script>
