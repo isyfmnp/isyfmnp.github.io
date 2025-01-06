@@ -11,7 +11,7 @@
           <span class="material-icons-outlined"> chevron_left </span>
         </button>
         <img id="picture" :style="{ height: photoHeight + 'px', width: photoWidth + 'px' }"
-          :src="photos[currentDay - 1][currentPhotoId].replace('.webp','').replace('/small','/big')" @click.stop="" />
+          :src="photos[currentDay - 1][currentPhotoId]" @click.stop="" />
         <button class="controls picture-forwards" @click.stop="adjustPhotoIndex(1)"
           :class="{ enabled: getPhotoOffsetAvailable(1) }">
           <span class="material-icons-outlined"> chevron_right </span>
