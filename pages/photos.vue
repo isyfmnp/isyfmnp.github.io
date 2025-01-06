@@ -10,8 +10,10 @@
           :class="{ enabled: getPhotoOffsetAvailable(-1) }">
           <span class="material-icons-outlined"> chevron_left </span>
         </button>
+        <div class="loading_icon" id="loading_icon"></div>
         <img id="picture" :style="{ height: photoHeight + 'px', width: photoWidth + 'px' }"
-          :src="photos[currentDay - 1][currentPhotoId].replace('.webp','').replace('small','big')" @click.stop="" />
+          :src="photos[currentDay - 1][currentPhotoId].replace('.webp', '').replace('small', 'big')" @click.stop=""
+          @load="onImageLoad()" />
         <button class="controls picture-forwards" @click.stop="adjustPhotoIndex(1)"
           :class="{ enabled: getPhotoOffsetAvailable(1) }">
           <span class="material-icons-outlined"> chevron_right </span>
@@ -235,6 +237,29 @@
   visibility: visible;
 }
 
+.loading_icon {
+  display: none;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border: 2px solid var(--bg);
+  top: 50%;
+  left: 50%;
+  border-color: transparent var(--bg) transparent var(--bg);
+  border-radius: 50%;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .picture-viewer {
   width: 100% !important;
   /* height: 100% !important; */
@@ -305,6 +330,11 @@ const photoWidth = ref(0);
 const photoHeight = ref(0);
 
 function showImage(pictureId) {
+  if (pictureId != currentPhotoId.value) {
+    document.getElementById("picture").style.display = "none";
+    document.getElementById("loading_icon").style.display = "block";
+
+  }
   currentPhotoId.value = pictureId;
   viewerShown.value = true;
   setTimeout(resizePhoto, 1);
@@ -319,9 +349,16 @@ function adjustPhotoIndex(offset) {
   //Should only be 1 or -1
   if (!getPhotoOffsetAvailable(offset)) return;
   currentPhotoId.value = currentPhotoId.value + offset;
+  document.getElementById("picture").style.display = "none";
+  document.getElementById("loading_icon").style.display = "block";
   setTimeout(resizePhoto, 1);
   // document.getElementById("picture").setAttribute("style", "width:photoWidth;height:photoHeight;");
 }
+
+function onImageLoad() {
+  document.getElementById("picture").style.display = "block";
+  document.getElementById("loading_icon").style.display = "none";
+};
 
 onMounted(() => {
   window.addEventListener("resize", resizePhoto);
@@ -374,12 +411,12 @@ function fetchPhotos() {
   // Fetch photos from images folder
   // Glob imports have to be static :eyeroll: so i have to statically import each one 
   let gallery = []
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day0/'+filePath.split('/').pop()));
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day1/'+filePath.split('/').pop()));
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day2/'+filePath.split('/').pop()));
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day3/'+filePath.split('/').pop()));
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day4/'+filePath.split('/').pop()));
-  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day5/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day0/' + filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day1/' + filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day2/' + filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day3/' + filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day4/' + filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day5/' + filePath.split('/').pop()));
 
   return gallery
 }
@@ -398,5 +435,4 @@ definePageMeta({
 //   link.href = url.replace(".webp", "").replace("small", "big");
 //   document.head.appendChild(link);
 // });
-
 </script>
