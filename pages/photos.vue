@@ -11,7 +11,7 @@
           <span class="material-icons-outlined"> chevron_left </span>
         </button>
         <img id="picture" :style="{ height: photoHeight + 'px', width: photoWidth + 'px' }"
-          :src="photos[currentDay - 1][currentPhotoId]" @click.stop="" />
+          :src="photos[currentDay - 1][currentPhotoId].replace('.webp','').replace('small','big')" @click.stop="" />
         <button class="controls picture-forwards" @click.stop="adjustPhotoIndex(1)"
           :class="{ enabled: getPhotoOffsetAvailable(1) }">
           <span class="material-icons-outlined"> chevron_right </span>
@@ -367,9 +367,6 @@ function resizePhoto() {
     );
     photoHeight.value = height * scale;
     photoWidth.value = width * scale;
-    console.log(photoHeight.value);
-    console.log(photoWidth.value);
-
   }
 }
 
@@ -377,12 +374,12 @@ function fetchPhotos() {
   // Fetch photos from images folder
   // Glob imports have to be static :eyeroll: so i have to statically import each one 
   let gallery = []
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/public/event_images/small/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day0/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day1/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day2/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day3/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day4/'+filePath.split('/').pop()));
+  gallery.push(Object.keys(import.meta.glob(`/public/event_images/small/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true })).map(filePath => '/event_images/small/day5/'+filePath.split('/').pop()));
 
   return gallery
 }
