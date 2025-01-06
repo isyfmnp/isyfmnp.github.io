@@ -11,7 +11,7 @@
           <span class="material-icons-outlined"> chevron_left </span>
         </button>
         <img id="picture" :style="{ height: photoHeight + 'px', width: photoWidth + 'px' }"
-          :src="photos[currentDay - 1][currentPhotoId]" @click.stop="" />
+          :src="photos[currentDay - 1][currentPhotoId].replace('.webp','').replace('/small','/big')" @click.stop="" />
         <button class="controls picture-forwards" @click.stop="adjustPhotoIndex(1)"
           :class="{ enabled: getPhotoOffsetAvailable(1) }">
           <span class="material-icons-outlined"> chevron_right </span>
@@ -194,7 +194,7 @@
 }
 
 .slide {
-  width: 100%;
+  /* height: 100%; */
   transition: transform 1s;
   position: relative;
 }
@@ -202,7 +202,7 @@
 .slide img {
   object-fit: contain;
   width: 100%;
-  max-height: 18rem;
+  max-height: 10rem;
   margin-bottom: -4px;
   transition: filter 200ms;
 }
@@ -377,12 +377,12 @@ function fetchPhotos() {
   // Fetch photos from images folder
   // Glob imports have to be static :eyeroll: so i have to statically import each one 
   let gallery = []
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
-  gallery.push(Object.values(import.meta.glob(`/images/2025/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day0/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day1/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day2/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day3/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day4/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
+  gallery.push(Object.values(import.meta.glob(`/images/small/day5/*.{png,jpg,jpeg,webp,PNG,JPEG,WEBP}`, { eager: true, query: '?url', import: 'default' })))
 
   return gallery
 }
