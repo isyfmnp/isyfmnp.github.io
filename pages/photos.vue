@@ -42,11 +42,16 @@
           </div>
         </div>
       </section>
+      <span>Link to photos on Google Drive: <a class="a_no_underline" href="https://drive.google.com/drive/folders/1p4cfXtDtIjeNj6zNjYKUDXM_vQ2JjXDQ">https://drive.google.com/drive/folders/1p4cfXtDtIjeNj6zNjYKUDXM_vQ2JjXDQ</a></span>
     </main>
   </div>
 </template>
 
 <style>
+.a_no_underline {
+  text-decoration: none;
+  color: var(--primary);
+}
 .masthead::before {
   color: var(--bg);
   background-image: url("/images/mediabg.webp");
